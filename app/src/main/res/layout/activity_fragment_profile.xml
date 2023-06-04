@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F6F5F6"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/book"
+        tools:ignore="MissingClass" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="WELCOME"
+
+        android:textColor="@color/teal_700"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/desi"
+        android:layout_width="395dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/profileName"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/design"
+        android:scaleX="1.4"
+        android:scaleY="1.2"
+        android:src="@drawable/design_setting" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desi"
+        android:layout_marginTop="-15dp">
+
+        <LinearLayout
+            android:id="@+id/masterLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearl0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:contentDescription="@string/profile"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="First name"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/teal_700" />
+
+            <LinearLayout
+                android:id="@+id/linearl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:contentDescription="@string/order_history"
+                    android:src="@drawable/ic_baseline_chat_24" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/teal_700" />
+
+            <LinearLayout
+                android:id="@+id/linearl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="30dp"
+                    android:contentDescription="@string/payment_history"
+                    android:src="@drawable/home_26" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/teal_700" />
+
+            <LinearLayout
+                android:id="@+id/linearl5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="30dp"
+                    android:contentDescription="@string/contact_dev"
+                    android:src="@drawable/ic_baseline_contact_phone_24" />
+
+                <TextView
+                    android:id="@+id/phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Contact No"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/teal_700" />
+
+            <LinearLayout
+                android:id="@+id/linearl6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearl7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Posts" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="393dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/teal_200"
+                android:text="@string/log_out" />
+
+            <LinearLayout
+                android:id="@+id/linearl8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Bookify"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
